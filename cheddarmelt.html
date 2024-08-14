@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Item - Cheddarmelt Burger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="starters.html#starters">Starters</a></li>
+            <li><a href="starters.html#steaks">Steaks & Grills</a></li>
+            <li><a href="starters.html#burgers">Burgers & Toasties</a></li>
+            <li><a href="starters.html#kiddies">Kiddies</a></li>
+            <li><a href="starters.html#desserts">Desserts</a></li>
+            <li><a href="starters.html#drinks">Drinks</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="menu-item">
+            <h2>Cheddarmelt Burger</h2>
+            <div class="menu-item-details">
+                <div class="item-image-container">
+                    <img src="images/cheddarmelt.jpg" alt="Cheddarmelt Burger" class="item-image">
+                </div>
+                
+                <div class="item-info">
+                    <p class="price">R 95.00</p>
+                    <p class="serving-size">Serving Size: 1 burger</p>
+                    <p class="description">
+                        A succulent beef patty topped with melted cheddar cheese, caramelized onions, and our special sauce, served on a toasted bun.
+                    </p>
+                    
+                    <div class="rating">
+                        <h3>Rating</h3>
+                        <div class="stars">
+                            ★★★★☆ <span>(45 Reviews)</span>
+                        </div>
+                    </div>
+
+                    <h3>Extras</h3>
+                    <ul class="extras">
+                        <input id="check-01" type="checkbox">
+                    <label for="check-01">R 15.00 - Extra cheddar cheese</label>
+                    <br/> 
+                    <input id="check-02" type="checkbox">
+                    <label for="check-02">R 20.00 - Add a side of fries</label>
+                    <br/> 
+                        
+                    </ul>
+
+                    <form class="order-form" action="thankyou.html" method="post">
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        </div>
+
+                        <label for="notes">Add notes:</label>
+                        <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Any special instructions?"></textarea>
+                        
+                        <button type="submit" href=thankyou.html>Add to Cart </button> 
+                    </form>aew
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; SAM-MEG the Creator. All rights reserved.</p>
+    </footer>
+</body>
+</html>

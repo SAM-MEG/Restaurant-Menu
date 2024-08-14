@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Item - Juices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="starters.html#starters">Starters</a></li>
+            <li><a href="starters.html#steaks">Steaks & Grills</a></li>
+            <li><a href="starters.html#burgers">Burgers & Toasties</a></li>
+            <li><a href="starters.html#kiddies">Kiddies</a></li>
+            <li><a href="starters.html#desserts">Desserts</a></li>
+            <li><a href="starters.html#drinks">Drinks</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="menu-item">
+            <h2>Juices</h2>
+            <div class="menu-item-details">
+                <div class="item-image-container">
+                    <img src="images/juices.jpg" alt="Juices" class="item-image">
+                </div>
+                
+                <div class="item-info">
+                    <p class="price">R 25.00</p>
+                    <p class="description">
+                        Fresh and fruity juices available in a variety of flavors for a refreshing drink.
+                    </p>
+                    
+                    <h3>Flavors</h3>
+                    <ul class="flavors">
+                        <li><input type="checkbox" id="flavor-01"><label for="flavor-01">Orange</label></li>
+                        <li><input type="checkbox" id="flavor-02"><label for="flavor-02">Apple</label></li>
+                        <li><input type="checkbox" id="flavor-03"><label for="flavor-03">Grape</label></li>
+                        <li><input type="checkbox" id="flavor-04"><label for="flavor-04">Pineapple</label></li>
+                        <li><input type="checkbox" id="flavor-05"><label for="flavor-05">Mango</label></li>
+                        <li><input type="checkbox" id="flavor-06"><label for="flavor-06">Berry Blend</label></li>
+                    </ul>
+
+                    <h3>Sizes</h3>
+                    <ul class="sizes">
+                        <li><input type="checkbox" id="size-01"><label for="size-01">Small (250ml)</label></li>
+                        <li><input type="checkbox" id="size-02"><label for="size-02">Medium (500ml)</label></li>
+                        <li><input type="checkbox" id="size-03"><label for="size-03">Large (750ml)</label></li>
+                    </ul>
+
+                    <form class="order-form" action="thankyou.html" method="post">
+                        <div class="quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        </div>
+
+                        <label for="notes">Add notes:</label>
+                        <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Any special instructions?"></textarea>
+                        
+                        <button type="submit">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; SAM-MEG the Creator. All rights reserved.</p>
+    </footer>
+</body>
+</html>
